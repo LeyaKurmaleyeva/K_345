@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+    <PreferenceCategory
+        android:key="storage_settings"
+        android:title="Storage"
+    >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="wifi"
+            android:summary="wifi summary"
+            android:title="wifi title"
+        />
+        <Preference
+            android:key="version_name"
+            android:title="version"
+            />
+        </PreferenceCategory>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="cache"
+            android:summary="cache summary"
+            android:title="cache title"
+        />
+
+    <PreferenceCategory
+        android:key="help_settings"
+        android:title="help category"
+    >
+        <Preference
+            android:key="how_to_link"
+            android:title="how to calculate"
+        >
+            <intent
+                android:targetPackage="com.example.macbook.myapplication"
+                android:targetClass="com.example.macbook.myapplication.CalcActivity"
+            />
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>
